@@ -14,7 +14,7 @@ async function fetchDataByCity(city) {
         if (result.message) {
             document.getElementById(
                 "secondDiv"
-            ).innerHTML = <h1>${city} ${result.message}</h1>;
+            ).innerHTML = `<h1>${city} ${result.message}</h1>`;
             return;
         }
         displayWeather(result);
@@ -33,7 +33,7 @@ async function fetchDataByCoordinates(lati, longi) {
         if (result.message) {
             document.getElementById(
                 "secondDiv"
-            ).innerHTML = <h1>${city} ${result.message}</h1>;
+            ).innerHTML = `<h1>${city} ${result.message}</h1>`;
         }
         displayWeather(result);
     } catch (err) {
